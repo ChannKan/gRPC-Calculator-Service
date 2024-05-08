@@ -2,7 +2,7 @@
 A calculator that is realized through a gRPC service.
 
 In order to run the calculator you need to perform the following steps:
-1. Clone the repository
+1. Clone the repository into C drive.
 2. Open GrpcCalculatorService project, Build & Run.
 3. A console window will pop up, see in the console window the local host https port number (see image)
 
