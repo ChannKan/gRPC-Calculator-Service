@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcCalculatorService";
+
+package Calculator;
+
+
+//The calculation service
+service CalculatorService {
+	rpc CalculatorOperation (OperationRequest) returns (OperationResponse);
+}
+
+//The parameters sent for calculation
+message OperationRequest {
+ string operator =1;
+ int32 left = 2;
+ int32 right = 3;
+}
+
+
+//The parameter returned from the calculation
+message OperationResponse {
+  string  result = 1;
+}
